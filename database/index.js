@@ -12,7 +12,7 @@ import AccountsDAO from "./DAOs/accountsDAO.js";
 /* Load the .env file into 'process' - D.D */
 dotenv.config();
 const MongoClient = mongodb.MongoClient;
-const mongoPort = process.env.PORT || 3000;
+const mongoPort = process.env.MONGO_PORT || 3000;
 
 /* Connect to the MongoDB Collection - D.D. */
 MongoClient.connect(process.env.RESTFOURSOULSONLINE_DB_URI, {
